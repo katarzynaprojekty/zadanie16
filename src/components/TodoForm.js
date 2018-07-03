@@ -1,5 +1,5 @@
 import React from 'react';
-//import style from './TodoForm.css';
+import style from './TodoForm.css';
 
 class TodoForm extends React.Component {
     constructor(props) {
@@ -13,7 +13,7 @@ class TodoForm extends React.Component {
     onChangeHandler(val) {
         this.setState({ text: val });
     }
-    
+
     onSubmitHandler(e) {
         e.preventDefault();
         this.props.addTodo(this.textInput.value);
@@ -22,8 +22,7 @@ class TodoForm extends React.Component {
 
     render() {
         return (
-            // <form className={style.TodoForm} onSubmit={this.onSubmitHandler}>
-            <form onSubmit={this.onSubmitHandler}>
+            <form className={style.TodoForm} onSubmit={this.onSubmitHandler}>
                 <label>Dodaj zadanie:</label>
                 <input
                     type='text'

@@ -1,8 +1,4 @@
 .Title {
-	min-width: 25vw;
-	min-height: 25vh;
-	margin: 0 auto;
-	background-color: bisque;
-	color: black;
+	margin: 10px auto;
 	text-align: center;
 }
