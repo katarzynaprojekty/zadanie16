@@ -17,7 +17,7 @@ class TodoForm extends React.Component {
     onSubmitHandler(e) {
         e.preventDefault();
         this.props.addTodo(this.textInput.value);
-        this.textInput.value = '';
+        this.textInput.value = 'enter a new task';
     }
 
     render() {
@@ -27,7 +27,7 @@ class TodoForm extends React.Component {
                 <input
                     type='text'
                     ref={(input) => { this.textInput = input; }}
-                    placeholder='Wpisz zadanie i naciśnij enter'
+                    // placeholder='Wpisz zadanie i naciśnij enter'
                     />
             </form>
         );
